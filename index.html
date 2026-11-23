@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Antrag an die Stadtverordnetenversammlung – SPD Eschborn</title>
+<meta name="description" content="Du hast eine Idee für einen Antrag der SPD-Fraktion an die Stadtverordnetenversammlung Eschborn oder für den Haushalt? Schick sie uns.">
+<style>
+  :root {
+    --rot: #ff3131;
+    --rot-dunkel: #d61f1f;
+    --text: #333;
+    --grau: #666;
+    --linie: #ff3131;
+    --radius: 4px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--rot);
+    color: var(--text);
+    font-family: "Quicksand", "Nunito", "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 24px 20px 40px; }
+
+  header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; color: #fff; }
+  h1 { font-weight: 400; font-size: clamp(1.2rem, 5.6vw, 2.6rem); line-height: 1.25; margin: 0; hyphens: auto; overflow-wrap: break-word; min-width: 0; }
+  .marke { display: flex; align-items: center; gap: 6px; color: #fff; text-decoration: none; flex-shrink: 0; }
+  .marke b { font-size: 2rem; font-weight: 900; letter-spacing: -0.02em; }
+  .marke span { font-size: 0.85rem; font-weight: 700; line-height: 1.05; }
+
+  .intro { background: #fff; color: var(--grau); padding: 16px 20px; margin: 20px 0; border-radius: var(--radius); }
+  .intro p { margin: 0 0 6px; }
+  .intro p:last-child { margin: 0; }
+
+  h2 { color: #fff; font-size: 1.05rem; font-weight: 700; margin: 24px 0 12px; }
+
+  form { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+  .karte { background: #fff; border-radius: var(--radius); padding: 14px 18px; }
+  .feld { display: block; margin-bottom: 18px; }
+  .feld:last-child { margin-bottom: 0; }
+  label, legend { display: block; font-size: 0.9rem; color: var(--text); margin-bottom: 4px; }
+  .pflicht::after { content: " *"; color: var(--rot-dunkel); }
+  input[type=text], input[type=email], input[type=tel], textarea {
+    width: 100%; border: 0; border-bottom: 1.5px solid var(--linie);
+    padding: 6px 2px; font: inherit; font-size: 1rem; color: var(--text); background: transparent;
+    border-radius: 0;
+  }
+  textarea { resize: vertical; min-height: 130px; }
+  input:focus, textarea:focus { outline: none; border-bottom-color: var(--rot-dunkel); background: #fff6f6; }
+  input:user-invalid, textarea:user-invalid { background: #ffecec; }
+  .hinweis { font-size: 0.8rem; color: var(--grau); margin-top: 3px; }
+
+  fieldset { border: 0; padding: 0; margin: 0 0 18px; }
+  .radios { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .radios label { display: inline-flex; align-items: center; gap: 6px; margin: 0; font-size: 1rem; }
+  input[type=radio], input[type=checkbox] { accent-color: var(--rot); width: 18px; height: 18px; }
+
+  .anlagen input[type=file] { display: block; width: 100%; font-size: 0.85rem; margin: 6px 0; }
+  #groesse { font-size: 0.8rem; color: var(--grau); }
+  #groesse.zuviel { color: var(--rot-dunkel); font-weight: 700; }
+
+  .voll { grid-column: 1 / -1; }
+  .einwilligung label { display: flex; gap: 10px; align-items: flex-start; font-size: 0.9rem; }
+  .einwilligung input { flex-shrink: 0; margin-top: 2px; }
+  a { color: var(--rot-dunkel); }
+
+  button {
+    background: #fff; color: var(--rot-dunkel); border: 2px solid #fff; border-radius: 999px;
+    font: inherit; font-weight: 700; font-size: 1.1rem; padding: 12px 28px; cursor: pointer;
+  }
+  button:hover, button:focus-visible { background: var(--rot-dunkel); color: #fff; outline: none; }
+  button[disabled] { opacity: .6; cursor: wait; }
+  .absenden { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; color: #fff; }
+
+  .honig { position: absolute; left: -9999px; }
+
+  footer { color: #fff; font-size: 0.85rem; margin-top: 28px; }
+  footer a { color: #fff; }
+
+  @media (max-width: 640px) {
+    form { grid-template-columns: 1fr; }
+    header { flex-direction: column-reverse; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Anträge an die<br>Stadtverordnetenversammlung</h1>
+    <a class="marke" href="https://www.spd-eschborn.de/" aria-label="SPD Eschborn – zur Website">
+      <b>SPD</b><span>Politik für<br>Eschborn</span>
+    </a>
+  </header>
+
+  <section class="intro">
+    <p>Du hast eine Idee für einen Antrag unserer Fraktion an die Stadtverordnetenversammlung oder für den Haushalt? Das freut uns! Bitte beschreibe kurz das Thema, schlage einen Text und eine Begründung vor. Das muss nicht perfekt sein, sollte aber mehr als ein Stichwort enthalten. Ergänzende Unterlagen kannst Du gern beifügen.</p>
+    <p>Der Vorstand kümmert sich gemeinsam mit der Fraktion darum. Spätestens nach zwei Monaten bekommst Du eine verbindliche Rückmeldung. Aus Deiner Idee kann dabei auch eine Anfrage oder ein anderes Instrument werden; Texte können ergänzt oder angepasst werden.</p>
+    <p>Unser Ziel: Gemeinsam konkrete Ideen in sozialdemokratisches Handeln übersetzen – und dabei lernen, was gut funktioniert.</p>
+  </section>
+
+  <h2>Als möglichen Antrag für die Stadtverordnetenversammlung habe ich folgenden Vorschlag:</h2>
+
+  <form id="antrag" action="https://formsubmit.co/vorstand@spd-eschborn.de" method="POST" enctype="multipart/form-data">
+    <!-- FormSubmit-Steuerfelder -->
+    <input type="hidden" name="_subject" id="betreff" value="Neuer Antragsvorschlag über das Online-Formular">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" id="weiter" value="">
+    <input type="text" name="_honey" class="honig" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+    <div class="karte">
+      <fieldset>
+        <legend>Art des Vorschlags</legend>
+        <div class="radios">
+          <label><input type="radio" name="Art" value="Antrag an die Stadtverordnetenversammlung" checked> Antrag</label>
+          <label><input type="radio" name="Art" value="Haushaltsantrag"> Haushaltsantrag</label>
+          <label><input type="radio" name="Art" value="Noch offen"> Weiß ich noch nicht</label>
+        </div>
+      </fieldset>
+
+      <div class="feld">
+        <label for="thema" class="pflicht">Thema</label>
+        <input type="text" id="thema" name="Thema" required maxlength="200">
+      </div>
+
+      <div class="feld">
+        <label for="antragstext" class="pflicht">Antragstext</label>
+        <textarea id="antragstext" name="Antragstext" required rows="7"
+          placeholder="Die Stadtverordnetenversammlung möge beschließen: …"></textarea>
+      </div>
+
+      <div class="feld">
+        <label for="begruendung" class="pflicht">Begründung</label>
+        <textarea id="begruendung" name="Begründung" required rows="7"></textarea>
+      </div>
+    </div>
+
+    <div class="karte">
+      <div class="feld">
+        <label for="name" class="pflicht">Name</label>
+        <input type="text" id="name" name="Name" required autocomplete="name">
+      </div>
+
+      <div class="feld">
+        <label for="email" class="pflicht">Mailadresse</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+        <div class="hinweis">Für unsere Rückmeldung an Dich.</div>
+      </div>
+
+      <div class="feld">
+        <label for="telefon">Telefonnummer</label>
+        <input type="tel" id="telefon" name="Telefon" autocomplete="tel">
+        <div class="hinweis">Freiwillig, für Rückfragen.</div>
+      </div>
+
+      <div class="feld anlagen">
+        <label>Ergänzende Unterlagen</label>
+        <input type="file" name="Anlage_1" accept=".pdf,.doc,.docx,.odt,.xls,.xlsx,.ods,.jpg,.jpeg,.png">
+        <input type="file" name="Anlage_2" accept=".pdf,.doc,.docx,.odt,.xls,.xlsx,.ods,.jpg,.jpeg,.png">
+        <input type="file" name="Anlage_3" accept=".pdf,.doc,.docx,.odt,.xls,.xlsx,.ods,.jpg,.jpeg,.png">
+        <div id="groesse">Freiwillig, bis zu 3 Dateien, zusammen max. 10 MB.</div>
+      </div>
+    </div>
+
+    <div class="karte voll einwilligung">
+      <label>
+        <input type="checkbox" name="Einwilligung" value="ja" required>
+        <span class="pflicht">Ich bin einverstanden, dass meine Angaben zur Bearbeitung meines Vorschlags an den Vorstand und die Fraktion der SPD Eschborn übermittelt und dort gespeichert werden. Die Übermittlung erfolgt über den E-Mail-Dienst FormSubmit (formsubmit.co). Ich kann die Einwilligung jederzeit per Mail an <a href="mailto:vorstand@spd-eschborn.de">vorstand@spd-eschborn.de</a> widerrufen. Weitere Informationen: <a href="https://www.spd-eschborn.de/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a>.</span>
+      </label>
+    </div>
+
+    <div class="voll absenden">
+      <button type="submit" id="senden">Vorschlag absenden</button>
+      <span>* Pflichtfeld</span>
+    </div>
+  </form>
+
+  <footer>
+    Geht an den Vorstand der SPD Eschborn: <a href="mailto:vorstand@spd-eschborn.de">vorstand@spd-eschborn.de</a><br>
+    <a href="https://www.spd-eschborn.de/impressum" target="_blank" rel="noopener">Impressum</a> ·
+    <a href="https://www.spd-eschborn.de/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var form = document.getElementById('antrag');
+    var MAX = 10 * 1024 * 1024;
+    var info = document.getElementById('groesse');
+    var infoText = info.textContent;
+
+    // Rücksprung nach dem Absenden: FormSubmit braucht eine vollständige URL
+    document.getElementById('weiter').value = new URL('danke.html', location.href).href;
+
+    function summe() {
+      var s = 0;
+      form.querySelectorAll('input[type=file]').forEach(function (f) {
+        if (f.files[0]) s += f.files[0].size;
+      });
+      return s;
+    }
+
+    form.addEventListener('change', function (e) {
+      if (e.target.type !== 'file') return;
+      var s = summe();
+      if (s > MAX) {
+        info.textContent = 'Die Dateien sind zusammen ' + (s / 1048576).toFixed(1) + ' MB groß – erlaubt sind 10 MB.';
+        info.classList.add('zuviel');
+      } else {
+        info.textContent = infoText;
+        info.classList.remove('zuviel');
+      }
+    });
+
+    form.addEventListener('submit', function (e) {
+      if (summe() > MAX) {
+        e.preventDefault();
+        info.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      var thema = document.getElementById('thema').value.trim();
+      document.getElementById('betreff').value = 'Antragsvorschlag: ' + thema;
+      var btn = document.getElementById('senden');
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet …';
+    });
+
+    // Falls der Nutzer per Zurück-Taste zurückkommt
+    window.addEventListener('pageshow', function () {
+      var btn = document.getElementById('senden');
+      btn.disabled = false;
+      btn.textContent = 'Vorschlag absenden';
+    });
+  })();
+</script>
+</body>
+</html>
